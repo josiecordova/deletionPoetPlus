@@ -120,7 +120,7 @@
 			
 			$response = '"' . $decoded->extract . '"';
 
-			echo strspn($response, '"', 0) . $response;
+			echo $response;
 			
 			
 			//$response = 
