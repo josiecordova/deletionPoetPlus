@@ -120,7 +120,7 @@
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
 			} while (strspn($response, '"', 0) > 0);
 
-			echo '"' . $response . '"';
+			echo '"' . $response . strspn($response, '"', 0) . '"';
 			
 			
 			//$response = 
