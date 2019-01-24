@@ -109,7 +109,7 @@ Word: <span id="word"></span>
     </body>
 </html>
 
-	<script type="text/javascript" src="{{ asset('/js/highlighter.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('highlighter.js') }}"></script>
 	
 	//src="{{ asset('/js/jquery.min.js') }}
 
