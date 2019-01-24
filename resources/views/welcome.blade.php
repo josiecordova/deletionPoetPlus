@@ -92,7 +92,7 @@
 						var grabbed = <?php 
 						
 						$client = new GuzzleHttp\Client();
-						$res = var_dump(json_decode($client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary'))).length - 1;//, ['auth' =>  ['user', 'pass']]);
+						$res = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
 						echo $res->getStatusCode(); // 200
 						echo $res->getBody(); // { "type": "User", ....
 
