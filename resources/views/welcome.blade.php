@@ -95,8 +95,8 @@
 				<div class="body">
 				
 				<p>Each word will be wrapped in a span.</p>
-<p>A second paragraph here.</p>
-Word: <span id="word"></span>
+				<p>A second paragraph here.</p>
+				Word: <span id="word"></span>
 
 				<p id="grabbedText">oops... pls refresh the page</p>
 				</div>
@@ -106,13 +106,12 @@ Word: <span id="word"></span>
                 </div>
             </div>
         </div>
+			<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
+
     </body>
 </html>
 
-	<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
 	
-	//src="{{ asset('/js/jquery.min.js') }}
-
 
 <script>
 		function grabText() {
