@@ -6,24 +6,10 @@
 
         <title>DELETION POET</title>
 
-				<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous">>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
   
-  $(function() {
-        // wrap words in spans
-        $('p').each(function() {
-            var $this = $(this);
-            $this.html($this.text().replace(/\b(\w+)\b/g, "<span>$1</span>"));
-        });
-
-        // bind to each span
-        $('p span').hover(
-            function() { $('#word').text($(this).css('background-color','#ffff66').text()); },
-            function() { $('#word').text(''); $(this).css('background-color',''); }
-        );
-    });
-  </script>
+		<script src="/resources/js/highlighter.js"></script>
   
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat" rel="stylesheet" type="text/css">
