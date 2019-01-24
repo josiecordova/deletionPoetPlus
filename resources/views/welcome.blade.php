@@ -93,10 +93,6 @@
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
-				
-				<script>
-					var grabbed = <?php echo var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; ?>; //Don't forget the extra semicolon!
-				</script>
 
 								
 				<a onclick="myFunction()">boop</a>
