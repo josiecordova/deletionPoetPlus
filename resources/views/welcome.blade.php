@@ -91,7 +91,7 @@
 					function myFunction() {
 						var grabbed = <?php 
 						
-						$response = "fuck";//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
+						$response = json_encode("42", JSON_HEX_TAG);//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
 						
 						echo $response;
 						
