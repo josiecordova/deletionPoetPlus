@@ -105,36 +105,36 @@
             </div>
         </div>
     </body>
-	
-					<script>
-					function myFunction() {
-						var grabbed = <?php 
-						
-						$client = new GuzzleHttp\Client();
-						$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
-						$decoded = json_decode($data->getBody()); // { "type": "User", ....
-						
-						
-						$response = '"' . $decoded->extract . '"';
-						
-						echo $response;
-						
-						
-
-						//$response = 
-						
-						//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
-						
-						//echo $response;
-						
-						
-						?>;
-						
-						if (grabbed.lastIndexOf('"') != -1) {
-							grabbed = str_replace('"', "'", grabbed);
-						}
-						
-						document.getElementById("grabbedText").innerHTML = grabbed;
-					}
-				</script>
 </html>
+
+<script>
+		function myFunction() {
+			var grabbed = <?php 
+			
+			$client = new GuzzleHttp\Client();
+			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
+			$decoded = json_decode($data->getBody()); // { "type": "User", ....
+			
+			
+			$response = '"' . $decoded->extract . '"';
+			
+			echo $response;
+			
+			
+
+			//$response = 
+			
+			//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
+			
+			//echo $response;
+			
+			
+			?>;
+			
+			if (grabbed.lastIndexOf('"') != -1) {
+				grabbed = str_replace('"', "'", grabbed);
+			}
+			
+			document.getElementById("grabbedText").innerHTML = grabbed;
+		}
+	</script>
