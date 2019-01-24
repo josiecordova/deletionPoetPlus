@@ -120,7 +120,8 @@
 		
 		function explodeText(input) {
 			var result = input.split(/[\s,]+/);
-			return result;
+			var rejoined = result.join(" ");
+			return rejoined;
 		}
 
 	</script>
