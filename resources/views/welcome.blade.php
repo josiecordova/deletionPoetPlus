@@ -104,7 +104,7 @@
 				</div>
 
                 <div class="links">
-                    <a href="/poem/store">save poem</a>
+                    <a href="/poem/store?text=grabbedText">save poem</a>
                 </div>
             </div>
         </div>
