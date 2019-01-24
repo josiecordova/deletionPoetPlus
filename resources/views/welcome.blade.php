@@ -17,6 +17,7 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
                 height: 100vh;
+				line-height: 1.6;
                 margin: 20px;
             }
 
