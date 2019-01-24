@@ -93,8 +93,8 @@
 						
 						$client = new GuzzleHttp\Client();
 						$res = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
-						
-						echo json_decode($res->getBody()); // { "type": "User", ....
+						$decoded = json_decode($res->getBody()); // { "type": "User", ....
+						echo $decoded;
 
 						//$response = 
 						
