@@ -99,12 +99,12 @@
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
 				<p>text below the fetched text (again... this highlights. WHY??)</p>
-				highlighted: <span id="word"></span>
+				highlighted text: <span id="word"></span>
 				
 				</div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="/poem/store">save poem</a>
                 </div>
             </div>
         </div>

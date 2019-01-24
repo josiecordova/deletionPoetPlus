@@ -17,4 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('poems', 'PoemController');
+Route::resource('poem', 'PoemController')->only([
+	'store', 'show'
+]);
+
+//Route::resource('poems', 'PoemController');

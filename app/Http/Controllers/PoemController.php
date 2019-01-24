@@ -14,9 +14,20 @@ class PoemController extends Controller
       return view('welcome', array('poem' => $poem));
     }
 	
-	/*public function show($id)
+	/**
+     * Create a new poem instance.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
     {
-      $poem = Poem::find($id);
-      return view('welcome', array('poem' => $poem));
-    }*/
+        // Validate the request...
+
+        $poem = new Poem;
+
+        $poem->text = $request->text;
+
+        $poem->save();
+    }
 }
