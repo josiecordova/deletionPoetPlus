@@ -17,8 +17,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #333;
+                color: #ccc;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
                 height: 100vh;
@@ -57,8 +57,8 @@
             }
 
             .links > a {
-                color: #636b6f;
-				padding-top: 60px;
+                color: #ccc;
+				padding-top: 30px;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
