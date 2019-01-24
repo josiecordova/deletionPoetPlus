@@ -132,7 +132,7 @@
 			?>;
 			
 			if (grabbed.lastIndexOf('"') != -1) {
-				grabbed = str_replace('"', "'", grabbed);
+				grabbed = str_replace('"', "QUOTE", grabbed);
 			}
 			
 			document.getElementById("grabbedText").innerHTML = grabbed;
