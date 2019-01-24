@@ -94,7 +94,7 @@
 				
 				<div class="body">
 				
-				<p>Each word will be wrapped in a span.</p>
+				<p id="grabbedText">Each word will be wrapped in a span.</p>
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
