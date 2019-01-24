@@ -58,6 +58,7 @@
 
             .links > a {
                 color: #636b6f;
+				margin-top: 30px;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -101,7 +102,6 @@
 				
 				<p>text below the fetched text (again... this highlights. WHY??)</p>
 				highlighted text: <span id="word"></span>
-				
 				</div>
 
                 <div class="links">
