@@ -70,8 +70,9 @@
                 margin-bottom: 30px;
             }
         </style>
+		
     </head>
-    <body onload="grabText()">    
+    <body onload="grabText()">	
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -104,7 +105,7 @@
 				</div>
 
                 <div class="links">
-                    <a href="/poem/store?text=grabbedText">save poem</a>
+                    <a href="/poem/store?text='grabbedText'">save poem</a>
                 </div>
             </div>
         </div>
