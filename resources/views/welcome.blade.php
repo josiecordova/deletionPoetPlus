@@ -7,7 +7,7 @@
         <title>DELETION POET</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
@@ -15,8 +15,8 @@
             html, body {
                 background-color: #fff;
                 color: #636b6f;
-                font-family: 'Josefin Sans', sans-serif;
-                font-weight: 300;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
                 height: 100vh;
                 margin: 10px;
             }
@@ -46,8 +46,8 @@
             }
 
             .title {
-				font-family: 'Montserrat', sans-serif;
-				font-weight: 300;
+				font-family: 'Josefin Sans', sans-serif;
+				font-weight: 200;
                 font-size: 84px;
             }
 
