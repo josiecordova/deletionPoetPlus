@@ -85,7 +85,7 @@
                 </div>
 				
 				<div class="body">
-				<p id="grabbedText">standby</p>
+				<p id="grabbedText">oops... pls refresh the page</p>
 				</div>
 
                 <div class="links">
