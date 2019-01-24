@@ -115,7 +115,7 @@
 			
 			$client = new GuzzleHttp\Client();
 			
-			//do {
+			do {
 
 			
 
@@ -126,7 +126,7 @@
 			$response = '"' . $decoded->extract . '"';
 			
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
-			//} while (strspn($response, '"', 1) <= 1);
+			} while (strspn($response, '"', 1) > 1);
 
 			echo $response;
 			
