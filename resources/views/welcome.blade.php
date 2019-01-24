@@ -89,7 +89,7 @@
 
 				<script>
 					function myFunction() {
-						var grabbed = <?php http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"); ?>;
+						var grabbed = <?php $response = http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"); echo $response; ?>;
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
