@@ -115,7 +115,7 @@
 			
 			?>;
 			
-			document.getElementById("grabbedText").innerHTML = explodeText(grabbed);
+			document.getElementById("grabbedText").innerHTML = grabbed;//explodeText(grabbed);
 		}
 		
 		function explodeText(input) {
