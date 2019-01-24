@@ -118,7 +118,7 @@
 			document.getElementById("grabbedText").innerHTML = explodeText(grabbed);
 		}
 		
-		function explodeText(var input) {
+		function explodeText(input) {
 			var result = input.split(/[\s,]+/);
 			return result;
 		}
