@@ -11,6 +11,6 @@ class PoemController extends Controller
     public function show($id)
     {
       $poem = Poem::find($id);
-      return view('show', array('poem' => $poem));
+      return view('welcome', array('poem' => $poem));
     }
 }
