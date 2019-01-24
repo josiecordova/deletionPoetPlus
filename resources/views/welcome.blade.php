@@ -103,6 +103,19 @@
   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
   crossorigin="anonymous">
   
+  $(function() {
+        // wrap words in spans
+        $('p').each(function() {
+            var $this = $(this);
+            $this.html($this.text().replace(/\b(\w+)\b/g, "<span>$1</span>"));
+        });
+
+        // bind to each span
+        $('p span').hover(
+            function() { $('#word').text($(this).css('background-color','#ffff66').text()); },
+            function() { $('#word').text(''); $(this).css('background-color',''); }
+        );
+    });
   </script>
 
 <script>
