@@ -83,6 +83,10 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+				
+				<div>
+					<p> {{ $poem->text }} </p>
+				</div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
