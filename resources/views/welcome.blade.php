@@ -89,8 +89,13 @@
 
 				<script>
 					function myFunction() {
-						var grabbed = <?php echo var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary", array("timeout"=>1), $info);
-))).length - 1; print_r($info);?>;
+						var grabbed = <?php 
+						
+						$response = 42; //var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
+						echo $response;
+						
+						
+						?>;
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
