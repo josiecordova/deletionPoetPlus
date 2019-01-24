@@ -96,8 +96,8 @@
 						$decoded = json_decode($data->getBody()); // { "type": "User", ....
 						
 						
-						$response = "'" . $decoded->extract . "'";
-
+						$response = '"' . $decoded->extract . '"';
+						
 						echo $response;
 						
 						
@@ -110,6 +110,11 @@
 						
 						
 						?>;
+						
+						if (grabbed.lastIndexOf('"') != -1) {
+							grabbed = str_replace('"', "'", grabbed);
+						}
+						
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
