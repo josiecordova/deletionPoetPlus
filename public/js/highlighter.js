@@ -1,5 +1,5 @@
 // wrap words in spans
-$("#grabbedText").each(function() {
+$('p').each(function() {
     var $this = $(this);
     $this.html($this.text().replace(/\b(\w+)\b/g, "<span>$1</span>"));
 });
