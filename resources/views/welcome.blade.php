@@ -62,9 +62,8 @@
                 margin-bottom: 30px;
             }
         </style>
-		myFunction();
     </head>
-    <body>
+    <body onload="myFunction()">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -85,7 +84,7 @@
                     Laravel
                 </div>
 				
-				<div class="body">
+				<div class="text">
 				<p id="grabbedText">doot doot</p>
 
 
