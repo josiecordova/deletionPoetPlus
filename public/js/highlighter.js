@@ -10,7 +10,7 @@ $('p span').hover(
     function() { $('#word').text(''); $(this).css('background-color',''); }
 );
 
-$('p span').click(
+$('p').click(
     var $this = $(this);
     $this.html($this.text().replace(""));
 );
