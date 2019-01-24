@@ -25,6 +25,15 @@
 				line-height: 1.6;
                 margin: 20px;
             }
+			
+			.note {
+                color: #444;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 10px;
+				line-height: 1.6;
+                margin: 20px;
+            }
 
             .full-height {
                 height: 100vh;
@@ -96,7 +105,7 @@
 				
 				<div class="body">
 				
-				<p>note: text below here SHOULD highlight (and be delete-able)</p>
+				<p class="note">note: text below here SHOULD be highlight-able (and delete-able) by my jquery script</p>
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
