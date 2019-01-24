@@ -17,7 +17,7 @@
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 400;
                 height: 100vh;
-                margin: 10px;
+                margin: 20px;
             }
 
             .full-height {
