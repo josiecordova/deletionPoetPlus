@@ -105,10 +105,8 @@
 				
 				<div class="body">
 				
-				<p class="note">note: text below here SHOULD be highlight-able (and delete-able) by my jquery script</p>
-				//highlighted text: <span id="word"></span>
-
-				
+				<p class="note">note: text below here SHOULD be highlight-able (and delete-able) like this by my jquery script</p>
+								
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
 				</div>
