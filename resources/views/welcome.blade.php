@@ -108,8 +108,6 @@
 			$response;
 			
 			$client = new GuzzleHttp\Client();
-			
-			do {
 
 			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
 			
@@ -118,17 +116,11 @@
 			$response = $decoded->extract;
 			
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
-			} while (strspn($response, '"', 0) > 0);
+			if (strspn($response, '"', 0) > 0) {
+				str_replace('"', '\"', $response);
+			}
 
-			echo '"' . $response . strspn($response, '"', 0) . '"';
-			
-			
-			//$response = 
-			
-			//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
-			
-			//echo $response;
-			
+			echo '"' . $response . '"';
 			
 			?>;
 			
