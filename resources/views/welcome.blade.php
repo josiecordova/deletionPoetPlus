@@ -96,12 +96,13 @@
 				
 				<div class="body">
 				
-				<p>note: text above the fetched text (this highlights!)</p>
+				<p>note: text below here SHOULD highlight (and be delete-able)</p>
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
-				<p>note: text below the fetched text (again... this highlights. WHY??)</p>
+				<p>note: again... this is selectable thru my jquery script. why not the above??</p>
 				highlighted text: <span id="word"></span>
+				<br>
 				</div>
 
                 <div class="links">
