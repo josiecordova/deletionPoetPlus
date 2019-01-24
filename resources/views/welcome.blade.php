@@ -46,6 +46,8 @@
             }
 
             .title {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
                 font-size: 84px;
             }
 
@@ -82,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    DELETION POET
+                    Deletion Poet
                 </div>
 				
 				<div class="body">
