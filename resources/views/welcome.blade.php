@@ -93,8 +93,7 @@
                 </div>
 				
 				<div class="body">
-				  		  <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
-
+				
 				<p>Each word will be wrapped in a span.</p>
 <p>A second paragraph here.</p>
 Word: <span id="word"></span>
@@ -109,6 +108,9 @@ Word: <span id="word"></span>
         </div>
     </body>
 </html>
+
+				  		  <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
+
 
 <script>
 		function grabText() {
