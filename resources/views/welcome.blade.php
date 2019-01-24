@@ -70,8 +70,10 @@
 	
 			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous">
+  crossorigin="anonymous"></script>
   
+  
+  <script>
 // wrap words in spans
 $('p').each(function() {
     var $this = $(this);
