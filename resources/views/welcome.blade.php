@@ -94,12 +94,12 @@
 				
 				<div class="body">
 				
-				<p>Each word will be wrapped in a span.</p>
+				<p>text above the fetched text (this highlights!)</p>
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
-				<p>A second paragraph here.</p>
-				Word: <span id="word"></span>
+				<p>text below the fetched text (again... this highlights. WHY??)</p>
+				highlighted: <span id="word"></span>
 				
 				</div>
 
@@ -114,33 +114,32 @@
 	
 
 <script>
-		function grabText() {
-			var grabbed = <?php 
+	function grabText() {
+		var grabbed = <?php 
 			
-			$response;
+		$response;
 			
-			$client = new GuzzleHttp\Client();
+		$client = new GuzzleHttp\Client();
 
-			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
+		$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
 			
-			$decoded = json_decode($data->getBody()); // { "type": "User", ....
-			
-			$response = $decoded->extract;
-			
-			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
-			echo '"' . addslashes($response) . '"';
-			
-			?>;
-			
-			document.getElementById("grabbedText").innerHTML = grabbed;//explodeText(grabbed);
-		}
+		$decoded = json_decode($data->getBody()); // { "type": "User", ....
 		
-		function explodeText(input) {
-			var result = input.split(" "); // can also use a regular expression to split along diff lines
-			//var rejoined = result.join(" ");
-			return result;
-		}
-
-	</script>
+		$response = $decoded->extract;
+		
+		// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
+		echo '"' . addslashes($response) . '"';
+		
+		?>;
+		
+		document.getElementById("grabbedText").innerHTML = grabbed;//explodeText(grabbed);
+	}
+		
+	function explodeText(input) {
+		var result = input.split(" "); // can also use a regular expression to split along diff lines
+		//var rejoined = result.join(" ");
+		return result;
+	}
+</script>
 	
-				<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
