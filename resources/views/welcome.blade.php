@@ -86,12 +86,6 @@
 				
 				<div class="text">
 				<p id="grabbedText">doot doot</p>
-
-
-
-								
-				<a onclick="myFunction()">boop</a>
-		
 				</div>
 
                 <div class="links">
@@ -126,7 +120,7 @@
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
 			} while (strspn($response, '"', 0) > 2);
 
-			echo $response;
+			echo strspn($response, '"', 0) . $response;
 			
 			
 			//$response = 
