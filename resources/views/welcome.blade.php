@@ -118,6 +118,11 @@
 			
 			$response = '"' . $decoded->extract . '"';
 			
+			// if there are double quotes within the turned up extract, switch them out for single quotes to avoid early escaping
+			if ($response.strstr($response, '"') != false) {
+				$response = str_replace('"', "'", $response);
+			}
+
 			echo $response;
 			
 			
@@ -130,10 +135,6 @@
 			
 			
 			?>;
-			
-			if (grabbed.lastIndexOf('"') != -1) {
-				grabbed = str_replace('"', "QUOTE", grabbed);
-			}
 			
 			document.getElementById("grabbedText").innerHTML = grabbed;
 		}
