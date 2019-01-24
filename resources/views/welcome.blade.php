@@ -17,7 +17,7 @@
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
-                margin: 0;
+                margin: 30px;
             }
 
             .full-height {
@@ -84,7 +84,7 @@
                     DELETION POET
                 </div>
 				
-				<div class="text">
+				<div class="body">
 				<p id="grabbedText">standby</p>
 				</div>
 
