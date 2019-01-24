@@ -63,7 +63,7 @@
             }
         </style>
     </head>
-    <body onload="myFunction()">
+    <body onload="grabText()">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -97,7 +97,7 @@
 </html>
 
 <script>
-		function myFunction() {
+		function grabText() {
 			var grabbed = <?php 
 			
 			$response;
@@ -115,6 +115,12 @@
 			
 			?>;
 			
-			document.getElementById("grabbedText").innerHTML = grabbed;
+			document.getElementById("grabbedText").innerHTML = explodeText(grabbed);
 		}
+		
+		function explodeText(var input) {
+			var result = input.split(/[\s,]+/);
+			return result;
+		}
+
 	</script>
