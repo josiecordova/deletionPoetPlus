@@ -93,12 +93,12 @@
                 </div>
 				
 				<div class="body">
+				<p id="grabbedText">oops... pls refresh the page</p>
 				
 				<p>Each word will be wrapped in a span.</p>
 				<p>A second paragraph here.</p>
 				Word: <span id="word"></span>
-
-				<p id="grabbedText">oops... pls refresh the page</p>
+				
 				</div>
 
                 <div class="links">
