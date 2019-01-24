@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>DELETION POET</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -81,20 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    DELETION POET
                 </div>
 				
 				<div class="text">
-				<p id="grabbedText">doot doot</p>
+				<p id="grabbedText">standby</p>
 				</div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
@@ -116,10 +111,6 @@
 			$response = $decoded->extract;
 			
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
-			//if (strspn($response, '"', 0) > 0) {
-				//addslashes($response);
-			//}
-
 			echo '"' . addslashes($response) . '"';
 			
 			?>;
