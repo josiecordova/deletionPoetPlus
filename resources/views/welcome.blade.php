@@ -89,7 +89,7 @@
 
 				<script>
 					function myFunction() {
-						var grabbed = <?php echo var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; ?>;
+						var grabbed = <?php echo json_encode("42", JSON_HEX_TAG); ?>;
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
