@@ -106,11 +106,11 @@
 				<div class="body">
 				
 				<p class="note">note: text below here SHOULD be highlight-able (and delete-able) by my jquery script</p>
+				<p class="note">highlighted text: <span id="word"></span></p>
+
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
-				<p>note: again... this is selectable thru my jquery script. why not the above??</p>
-				highlighted text: <span id="word"></span>
 				</div>
 
                 <div class="links">
