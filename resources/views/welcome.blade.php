@@ -73,19 +73,7 @@
   crossorigin="anonymous"></script>
   
   
-  <script>
-// wrap words in spans
-$('p').each(function() {
-    var $this = $(this);
-    $this.html($this.text().replace(/\b(\w+)\b/g, "<span>$1</span>"));
-});
-
-// bind to each span
-$('p span').hover(
-    function() { $('#word').text($(this).css('background-color','#ffff66').text()); },
-    function() { $('#word').text(''); $(this).css('background-color',''); }
-);
-  </script>
+  <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
   
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
