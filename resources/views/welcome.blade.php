@@ -117,7 +117,7 @@
 			
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
 			if (strspn($response, '"', 0) > 0) {
-				str_replace('"', '\"', $response);
+				addslashes($response);
 			}
 
 			echo '"' . $response . '"';
