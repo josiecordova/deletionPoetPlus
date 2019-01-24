@@ -85,7 +85,6 @@
                 </div>
 				
 				<div>
-					// <p> {{ $poem->text }} </p>
 				</div>
 
                 <div class="links">
