@@ -96,11 +96,11 @@
 				
 				<div class="body">
 				
-				<p>text above the fetched text (this highlights!)</p>
+				<p>note: text above the fetched text (this highlights!)</p>
 				
 				<p id="grabbedText">oops... pls refresh the page</p>
 				
-				<p>text below the fetched text (again... this highlights. WHY??)</p>
+				<p>note: text below the fetched text (again... this highlights. WHY??)</p>
 				highlighted text: <span id="word"></span>
 				</div>
 
