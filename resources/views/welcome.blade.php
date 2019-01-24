@@ -87,7 +87,26 @@
 				<div class="body">
 				<p id="grabbedText">doot doot</p>
 
-				<script>
+
+
+								
+				<a onclick="myFunction()">boop</a>
+		
+				</div>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </body>
+	
+					<script>
 					function myFunction() {
 						var grabbed = <?php 
 						
@@ -118,21 +137,4 @@
 						document.getElementById("grabbedText").innerHTML = grabbed;
 					}
 				</script>
-
-								
-				<a onclick="myFunction()">boop</a>
-		
-				</div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
 </html>
