@@ -121,7 +121,7 @@
 		function explodeText(input) {
 			var result = input.split(" "); // can also use a regular expression to split along diff lines
 			//var rejoined = result.join(" ");
-			return rejoined;
+			return result;
 		}
 
 	</script>
