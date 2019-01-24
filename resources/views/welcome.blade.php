@@ -59,9 +59,6 @@
             }
 
             .m-b-md {
-				position: absolute;
-                align-items: center;
-                top: 18px;
                 margin-bottom: 30px;
             }
         </style>
