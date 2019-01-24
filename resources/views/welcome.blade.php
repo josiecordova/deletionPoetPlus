@@ -14,8 +14,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
+        <!-- Styles (lightly adjusted from the default laravel proj)-->
         <style>
+		
             html, body {
                 background-color: #fff;
                 color: #111;
@@ -119,9 +120,9 @@
     </body>
 </html>
 
-	
-
 <script>
+	// I will eventually move these scripts to their own dedicated js files
+	// a lil script which retrieves and formats a random wiki article summary (just the extract)
 	function grabText() {
 		var grabbed = <?php 
 			
@@ -140,14 +141,19 @@
 		
 		?>;
 		
+		// overwrite the grabbedText element with the newly snagged text
 		document.getElementById("grabbedText").innerHTML = grabbed;//explodeText(grabbed);
 	}
-		
+	
+	/* wrote this in case I needed to split the output above for easier jquery handling
+	* in retrospect this will prob sidestep the issue I was having with the jquery script I retrieve from
+	* the public js folder
+	*/
 	function explodeText(input) {
 		var result = input.split(" "); // can also use a regular expression to split along diff lines
 		//var rejoined = result.join(" ");
 		return result;
 	}
 </script>
-	
+
 <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>

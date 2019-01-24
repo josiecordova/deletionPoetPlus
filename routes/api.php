@@ -20,5 +20,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('poem', 'PoemController')->only([
 	'store', 'show'
 ]);
-
-//Route::resource('poems', 'PoemController');
