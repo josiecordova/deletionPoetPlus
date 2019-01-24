@@ -9,3 +9,8 @@ $('p span').hover(
     function() { $('#word').text($(this).css('background-color','#ffff66').text()); },
     function() { $('#word').text(''); $(this).css('background-color',''); }
 );
+
+$('p span').click(
+    var $this = $(this);
+    $this.html($this.text().replace(""));
+);
