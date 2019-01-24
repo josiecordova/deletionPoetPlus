@@ -29,5 +29,7 @@ class PoemController extends Controller
         $poem->text = $request->text;
 
         $poem->save();
+		
+		return view('welcome');
     }
 }
