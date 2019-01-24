@@ -62,6 +62,7 @@
                 margin-bottom: 30px;
             }
         </style>
+		myFunction();
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -117,11 +118,9 @@
 			
 			do {
 
-			
-
 			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
-			$decoded = json_decode($data->getBody()); // { "type": "User", ....
 			
+			$decoded = json_decode($data->getBody()); // { "type": "User", ....
 			
 			$response = '"' . $decoded->extract . '"';
 			
