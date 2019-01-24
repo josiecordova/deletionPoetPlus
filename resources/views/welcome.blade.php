@@ -113,14 +113,14 @@
 
 			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
 			
-			$decoded = "" . json_decode($data->getBody()); // { "type": "User", ....
+			$decoded = json_decode($data->getBody()); // { "type": "User", ....
+			
+			$response = $decoded->extract;
 			
 			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
-			} while (strspn($decoded, '"', 0) > 0);
-			
-			$response = '"' . $decoded->extract . '"';
+			} while (strspn($response, '"', 0) > 0);
 
-			echo $response;
+			echo '"' . $response . '"';
 			
 			
 			//$response = 
