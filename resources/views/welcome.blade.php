@@ -96,7 +96,7 @@
 				
 				<p>Each word will be wrapped in a span.</p>
 				
-				<p>oops... pls refresh the page</p>
+				<p id="grabbedText">oops... pls refresh the page</p>
 				
 				<p>A second paragraph here.</p>
 				Word: <span id="word"></span>
@@ -108,8 +108,6 @@
                 </div>
             </div>
         </div>
-			<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
-
     </body>
 </html>
 
@@ -144,3 +142,5 @@
 		}
 
 	</script>
+	
+				<script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
