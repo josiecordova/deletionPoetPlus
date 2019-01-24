@@ -58,7 +58,7 @@
 
             .links > a {
                 color: #636b6f;
-				margin-top: 30px;
+				padding-top: 60px;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -102,7 +102,6 @@
 				
 				<p>note: again... this is selectable thru my jquery script. why not the above??</p>
 				highlighted text: <span id="word"></span>
-				<br>
 				</div>
 
                 <div class="links">
