@@ -7,8 +7,7 @@
         <title>DELETION POET</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -47,7 +46,7 @@
 
             .title {
 				font-family: 'Josefin Sans', sans-serif;
-				font-weight: 200;
+				font-weight: 300;
                 font-size: 84px;
             }
 
