@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>DELETION POET</title>
+		
+			
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Montserrat" rel="stylesheet" type="text/css">
@@ -66,15 +71,7 @@
             }
         </style>
     </head>
-    <body onload="grabText()">
-	
-			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-  
-  
-  <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
-  
+    <body onload="grabText()">    
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -104,6 +101,9 @@
                 </div>
             </div>
         </div>
+		
+		  <script type="text/javascript" src="{{ URL::asset('js/highlighter.js') }}"></script>
+
     </body>
 </html>
 
