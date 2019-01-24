@@ -111,22 +111,26 @@
 		function myFunction() {
 			var grabbed = <?php 
 			
+			$response;
+			
 			$client = new GuzzleHttp\Client();
+			
+			do {
+
+			
+
 			$data = $client->get('https://en.wikipedia.org/api/rest_v1/page/random/summary');//, ['auth' =>  ['user', 'pass']]);
 			$decoded = json_decode($data->getBody()); // { "type": "User", ....
 			
 			
 			$response = '"' . $decoded->extract . '"';
 			
-			// if there are double quotes within the turned up extract, switch them out for single quotes to avoid early escaping
-			if ($response.strstr($response, '"') != false) {
-				$response = str_replace('"', "'", $response);
-			}
+			// if there are double quotes within the turned up extract, turn this bad boy around to avoid early escaping
+			} while (strspn($response, '"', 1) <= 1);
 
 			echo $response;
 			
 			
-
 			//$response = 
 			
 			//var_dump(json_decode(http_get("https://en.wikipedia.org/api/rest_v1/page/random/summary"))).length - 1; 
